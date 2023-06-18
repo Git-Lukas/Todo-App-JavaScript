@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- CSS STYLE -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>To-do List App</title>
+</head>
+<body>
+    <div>
+        <header>
+            <picture>
+                <img src="todo-logo.png" alt="logo">
+            </picture>
+            <div class="title-color">
+                <h1>TO DO</h1>
+            </div>
+        </header>
+        
+        <main class="container">
+            
+            <section class="card input-todo">
+                <form action="" id="form">
+                    <input 
+                        type="text" 
+                        name="" 
+                        id="input-text"
+                        placeholder="Create a new to-do task..."
+                    >
+                </form>
+            </section>
+        
+            <section>
+                <div class="card-todo">
+                    <!-- No tasks found... -->
+                </div>
+            </section>
+
+            <template class="template" id="template-todo">
+                <div class="template-content">
+
+                    <div class="template-check-task">
+                        <div class="template-check"></div>
+                        <div class="template-task"></div>
+                    </div>
+
+                    <button class="close-task-btn">X</button>
+
+                </div>
+            </template>
+        
+            <div class="card counter">
+                <p class="counter-task">0 tasks left</p>
+                <button class="clear-btn">Clear Completed</button>
+            </div>
+
+        </main>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>

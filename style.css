@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+    /*Colors*/
+    --bright-Blue: hsl(220, 98%, 61%);
+    --very-Light-Grayish-Blue: hsl(236, 33%, 92%);
+    --light-Grayish-Blue: hsl(233, 11%, 84%);
+    --dark-Grayish-Blue: hsl(236, 9%, 61%);
+    --very-Dark-Grayish-Blue: hsl(235, 19%, 35%);
+}
+
+
+/*==========BASE==========*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    color: var(--very-Dark-Grayish-Blue);
+    background-color: var(--light-Grayish-Blue)
+}
+
+input {
+    font-family: 'Josefin Sans', sans-serif;
+    color: var(--dark-Grayish-Blue);
+}
+
+img {
+    max-width: 65px;
+    height: auto;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+
+
+/*==========HEADER==========*/
+header {
+    width: 100%;
+    height: 200px;
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+    /* z-index: -1;*/
+}
+
+h1 {
+    margin: 0 auto;
+    margin-top: 72px;
+    margin-bottom: 80px;
+    color: var(--bright-Blue);
+    word-spacing: -3px;
+}
+
+
+/*==========CONTAINER==========*/
+.container {    
+    max-width: 768px;
+    margin: 0 auto;
+    /* margin-top: 48px; */
+}
+
+@media (min-width: 640px) {
+    .container {
+        max-width: 640px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+
+/*==========REUSABLE VARIABLES==========*/
+.card {
+    width: 100%;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 24px;    
+    background-color: hsl(0, 0%, 98%);
+    border-radius: 0.5rem;
+    border: 1px solid hsl(220, 13%, 91%);
+    padding: 0.75rem 1.25rem;
+}
+
+
+/*==========INPUT==========*/
+#form {
+    width: 100%;
+}
+
+#input-text {
+    width: 100%;
+    border: none;
+    padding: 0.5rem;
+    font-family: 'Josefin Sans', sans-serif;
+    color: var(--very-Dark-Grayish-Blue); 
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+/*==========TEMPLATE==========*/
+.template-content{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: 54px;
+    margin-top: 24px;
+    padding: 0.75rem 1.25rem;
+    background-color: hsl(0, 0%, 98%);
+    border-radius: 0.5rem;
+    border-bottom: 8px solid hsl(220, 13%, 91%);
+}
+
+.template-check-task{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.template-check {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.template-task {
+    margin-left: 1rem;
+    font-weight: 600;
+    list-style: none;
+    cursor: pointer;
+}
+
+.checked {
+    gap: 1rem;
+    width: 24px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    background-image: url(checked.png);
+    background-size: cover;
+    background-position: center;
+    text-decoration: line-through;
+}
+
+
+/*==========CLOSE BUTTON==========*/
+.close-task-btn {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 100%;
+    font-family: 'Josefin Sans', sans-serif;   
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--very-Dark-Grayish-Blue);
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.close-task-btn:hover {
+    background-color: hsl(220, 13%, 91%);
+}
+
+
+/*==========COUNTER CARD==========*/
+.counter {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.875rem;
+}
+
+.clear-btn {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.375rem;
+    font-family: 'Josefin Sans', sans-serif;   
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--very-Dark-Grayish-Blue);
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.clear-btn:hover {
+    color: var(--bright-Blue);
+}
